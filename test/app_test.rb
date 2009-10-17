@@ -25,14 +25,7 @@ class AppTest < Test::Unit::TestCase
     post '/work', :html => @html
     assert last_response.body.include?("Ups... def Ups... Did you sent us an CSS file?")
   end
-  
-  def test_posting
-    @css = Rack::Test::UploadedFile.new("test/file.css", 'text/css')
-    @html = Rack::Test::UploadedFile.new("test/file.html", 'text/html')
-    post '/work', :html => @html , :css => @css
-    assert last_response.body.include?("BECUASE DESIGNERS DONT LIKE TO INLINE CSS")
-  end
-  
+    
   def test_should_inline
     @css = Rack::Test::UploadedFile.new("test/file.css", 'text/css')
     @html = Rack::Test::UploadedFile.new("test/file.html", 'text/html')

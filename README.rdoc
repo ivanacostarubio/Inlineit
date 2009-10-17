@@ -1,0 +1,11 @@
+SIMPLE SINATRA APP USING THE TAMTAM GEM FOR INLINING CSS
+
+RUN: ruby test/app_test.ruby for tests
+
+LIVE AT: inlineit.heroku.com
+
+GEMS: sinatra, rack-test, haml, tamtam, hpricot
+
+SHOWCASES: the simplicity and power of sinatra
+
+may I have a blue level on the rocks please
