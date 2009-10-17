@@ -1,0 +1,44 @@
+.form{:style => "padding: 1em; background-color: #ccc;"  }
+  %form{ :action => "/work", :method => "post", :enctype => "multipart/form-data"}
+    %label HTML File:
+    %input{:type => "file", :name => "html", :id => "html" }
+    %label CSS File:
+    %input{:type => "file", :name => "css" }
+    %input{:type => "submit", :value => "inlineit"}
+  
+
+%h1 Inlineit. A simple css inline web service
+
+%h2 The Scenario: 
+%p I found myself in several situations where:
+%ul
+  %li I sliced a PSD using external css to inline it later.
+  %li I was tired os copying and pasting the same css class in several places.
+  %li I just wanted to worry about the inline css later.
+
+%b inlineit.heroku.com is here to help you.
+
+%h2 How:
+%p Just use the form at the top of this page. Is as simple as that. After you submit, we'll inline it for you. 
+%p Maybe you want to post to inlineit.heroku.com/work with :html and :css ?
+
+%h2 Who:
+%p 
+  Me 
+  %a{ :href => "http://www.ivanacostarubio.com", :target => "BLANK" }
+    Ivan Acosta-Rubio
+  did it while working for 
+  %a{ :href => "http://www.bakedweb.net", :target => "BLANK"}
+    Bakedweb - A design and web development studio in Miami Florida. 
+  
+%p 
+  The real credit for this it to the creators of the 
+  %a{ :href => "http://tamtam.rubyforge.org/", :target => "BLANK"}
+    Tamtam gem 
+  to
+  %a{ :href => "http://www.sinatrarb.com", :target => "BLANK"}
+    Sinatra 
+  and Benlovell in #sinatra IRC for pointing in the right direction of Testing File uploads on Rack  
+
+%h2 Fact:
+%p The document you are reading is much longer than the app. =)
